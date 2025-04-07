@@ -1,24 +1,34 @@
-import React from 'react';
-import { Grid , Skeleton } from '@mui/material';
-
+import { Grid, Skeleton, Stack } from "@mui/material";
+import React from "react";
 export const LayoutLoader = () => {
   return (
-    <Grid container height={"calc(100vh - 4rem)"} spacing={"1rem"}>
-    <Grid item sm={4} md={3} height={"100%"} sx={{display:{xs:"none",sm:"block"}}} >
-      <Skeleton variant='rectangular'  />
+    <Grid container height={"calc(100vh-4rem)"} spacing={"1rem"}>
+      <Grid item sm={4} md={3} sx={{ display: { xs: "none", sm: "block" } }} height={"100%"}>
+        Firts one side
+        <Skeleton variant="rectangular" />
       </Grid>
 
 
-    <Grid  item xs={12} sm={8} md={5} lg={6} height={"100%"}>
-       <Skeleton variant='rectangular' />
-       </Grid>
+      <Grid item xs={12} sm={8} md={5} lg={6} height={"100%"}>
+        Second one side
+        {/* <Skeleton variant="rectangular" height={"100px"} /> */}
+        <Stack spacing={"1rem"}>
+          {Array.from({ length: 10}).map((_, index) => (
+              <Skeleton  key={index} variant="rounded" height="80px" />
+          ))}
+        </Stack>
+      </Grid>
 
+      <Grid item md={4} lg={3} height={"100%"} sx={{
+        display: { xs: "none", md: "block" },
 
-    <Grid item md={4} lg={3}  height={"100%"} sx={{
-      display:{xs:"none",md:"block"},
-    }}>
-      <Skeleton variant='rectangular' />
+      }}>
+        <Skeleton variant="rectangular" height={"100vh"} />
+        Third one side
       </Grid>
     </Grid>
+
   )
 }
+
+

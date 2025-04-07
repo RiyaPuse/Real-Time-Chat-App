@@ -1,8 +1,9 @@
-import { AppBar, Toolbar, Typography, Box, IconButton, Tooltip } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box, IconButton, Tooltip, Backdrop } from '@mui/material';
 
 import { orange } from '../../constens/color.js';
 import React, { Suspense, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+// import Backdrop from '@mui/material';
 import { Add as AddIcon, Menu as MenuIcon, Search as SearchIcon, Group as GroupIcon, Logout as LogoutIcon, Notifications as NotificationIcon } from '@mui/icons-material'
 // import Search from '../specific/Search.jsx';
 const Search = React.lazy(() => import('../specific/Search.jsx'));
@@ -112,7 +113,7 @@ const openNotification = () => {
 
       {
         issearch &&(
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Backdrop open={true} />}>
             <Search />  
           </Suspense>
         )
@@ -121,7 +122,7 @@ const openNotification = () => {
 
       {
         isGroup &&(
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Backdrop open={true} />}>
             <NewGroups />  
           </Suspense>
         )
@@ -130,7 +131,7 @@ const openNotification = () => {
 
       {
         isnotification &&(
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Backdrop open={true} />}>
             <Notifications />  
           </Suspense>
         ) 
