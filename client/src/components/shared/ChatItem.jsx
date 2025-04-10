@@ -1,35 +1,39 @@
 import React, { memo } from 'react'
 import { Link } from "../styles/StyleComponent.jsx"
 import { Stack, Typography } from '@mui/material'
+import {Box} from "@mui/material";
+import AvatarCard from './AvatarCard.jsx';
 
 
 const ChatItem = ({
   avatar = [],
   name,
   _id,
-  sameSender,
+  
   groupChart = false,
-
+  sameSender,
   isOnline,
   newMessageAlert,
   index = 0
-  , handleDeleteChatOpen }) => {
+  ,
+   handleDeleteChat }) => {
   return <Link sx={{
     padding:"0",
-  }} to={`/chats/${_id}`} onContextMenu={(e) => handleDeleteChatOpen(e, _id, groupChart)}>
+  }} to={`/chats/${_id}`} onContextMenu={(e) => handleDeleteChat(e, _id, groupChart)}>
     <div style={{
       width:"20rem",
       display: "flex",
       gap: "1rem",
       alighnItems: "center",
       padding: "1rem",
-      backgroundColor: sameSender ? "lightgray" : "unset",
+      backgroundColor: sameSender ? "black" : "unset",
       color: sameSender ? "white" : "unset",
-      justifyContent: "space-between",
       position: "relative"
 
     }}>
       {/* Avatar card */}
+      <AvatarCard avatar={avatar} />
+
       {/* in this stack first it print name than it print how many new message  */}
       <Stack>
         <Typography>{name}</Typography>
@@ -46,6 +50,7 @@ const ChatItem = ({
             width: "10px",
             height: "10px",
             borderRadius: "50%",
+            zIndex: "10",
             backgroundColor: "green",
             position: "absolute",
             top: "50%",

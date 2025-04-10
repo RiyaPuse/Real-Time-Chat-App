@@ -22,5 +22,6 @@ export const Link = styled(LinkComponent)`
   &:hover {
     text-decoration: none;
     background-color: #0f0f0f;
+    color: white;
   }
 `;

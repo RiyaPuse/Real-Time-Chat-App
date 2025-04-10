@@ -1,7 +1,7 @@
 export const sampleChats = [
   {
     avatar: [
-      "https://blush.design/api/download?shareUri=ntrpG0kJw&c=Hair_0%7E231F20_Skin_0%7Ef8d3c4_Top_0%7E7C7C7C&bg=ffffff"
+      "https://t3.ftcdn.net/jpg/07/06/10/62/360_F_706106273_azeLKRtE7CHga5JjHNfWAbgr4IkhEuwD.jpg"
     ],
     name: "Riya",
     _id: "1",
@@ -10,7 +10,7 @@ export const sampleChats = [
   },
   {
     avatar: [
-      "https://blush.design/api/download?shareUri=H5yoMW3zg&c=Hair_0%7E000000_Skin_0%7Effdbac_Top_0%7E36C5F0&bg=ffffff"
+      "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
     ],
     name: "Aryan",
     _id: "2",
@@ -19,7 +19,7 @@ export const sampleChats = [
   },
   {
     avatar: [
-      "https://blush.design/api/download?shareUri=zhjclK_vC&c=Hair_0%7Eb5524d_Skin_0%7Efdc5b5_Top_0%7Eea9393&bg=ffffff"
+      "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
     ],
     name: "Anjali",
     _id: "3",
@@ -28,7 +28,7 @@ export const sampleChats = [
   },
   {
     avatar: [
-      "https://blush.design/api/download?shareUri=rE2iAOm-A&c=Hair_0%7E6C4B3C_Skin_0%7Ef9c9b6_Top_0%7E839AA8&bg=ffffff"
+      "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
     ],
     name: "Team MERN",
     _id: "4",
@@ -37,7 +37,7 @@ export const sampleChats = [
   },
   {
     avatar: [
-      "https://blush.design/api/download?shareUri=iVRWBRuYJ&c=Hair_0%7E2f1b0c_Skin_0%7Effe0bd_Top_0%7E6C63FF&bg=ffffff"
+      "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
     ],
     name: "Project Squad",
     _id: "5",

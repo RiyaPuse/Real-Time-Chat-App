@@ -1,6 +1,6 @@
 import React from 'react'
 import { Stack } from '@mui/material'
-import ChatItem from '../shared/ChatItem'
+import ChatItem from '../shared/ChatItem.jsx'
 
 const ChatList = ({
   w = "100%",
@@ -37,7 +37,7 @@ const ChatList = ({
             key={_id}
             groupChart={groupChat}
             sameSender={chatId === _id}
-            handleDeleteChatOpen={handleDeleteChat} />
+            handleDeleteChat={handleDeleteChat} />
         })}
 
 
