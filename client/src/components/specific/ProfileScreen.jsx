@@ -11,7 +11,7 @@ const ProfileScreen = () => {
       <ProfileCard heading={"Bio"} text={"this is me"}/>
       <ProfileCard heading={"Username"} text={"meRiya"} Icon={UserNameIcon}/>
       <ProfileCard heading={"Name"} text={"Riya"} Icon={FaseIcon}/>
-      <ProfileCard heading={"Joined"} text={moment} Icon={CalendarIcon}/>
+      <ProfileCard heading={"Joined"} text={moment("2025-04-10T18:30:00.000Z").fromNow()} Icon={CalendarIcon}/>
       
 
     </Stack>
