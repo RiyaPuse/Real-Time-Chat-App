@@ -45,3 +45,44 @@ export const sampleChats = [
     members: ["2", "4", "5", "6"],
   }
 ];
+
+
+
+export const sampleUsers = [{
+  avatar: "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png",
+  name: "Aryan",
+  _id: "1",
+  // groupChat: false,
+  // members: ["1", "2"],
+}, {
+  avatar: "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png",
+  name: "Anjali",
+  _id: "2",
+  // groupChat: false,
+  // members: ["2", "3"],
+}
+    
+];
+
+export const sampleNotifications=[
+{
+  sender:{
+    avatar: "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png",
+    name: "Anjali",
+    
+  },
+  _id: "1",
+
+},
+{
+  sender:{
+    avatar: "https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png",
+    name: "Riya",
+    
+  },
+  _id: "2",
+
+}
+
+
+]
