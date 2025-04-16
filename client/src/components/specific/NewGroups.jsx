@@ -16,11 +16,12 @@ const NewGroups = () => {
         : [...prev, id]);
         console.log(selectedMembers);
   };
-  
 
   const submitHandler = () => { };
+  const closeHandler=()=>{};
+
   return (
-    <Dialog open>
+    <Dialog open onClose={closeHandler}>
       <Stack p={{ xs: "1rem", sm: "2rem" }} width={"25rem"} spacing={"2rem"}>
         <DialogTitle textAlign={"center"} varient={"h4"}>New Group</DialogTitle>
 

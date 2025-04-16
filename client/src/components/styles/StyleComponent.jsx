@@ -1,5 +1,6 @@
 import { styled } from '@mui/material';
 import {Link as LinkComponent} from "react-router-dom";
+import { grayColor } from '../../constens/color';
 export  const VisuallyHiddenInput = styled('input')({
   clip: 'rect(0 0 0 0)',
   clipPath: 'inset(50%)',
@@ -25,3 +26,17 @@ export const Link = styled(LinkComponent)`
     color: white;
   }
 `;
+
+
+// chat file input box
+export const InputBox = styled('input')`
+width: 100%;
+height: 100%;
+outline: none;
+border:none;
+padding:0 3rem;
+border-radius: 1.5rem;
+font-size: 1.5rem;
+background-color:${grayColor};
+`;
+  

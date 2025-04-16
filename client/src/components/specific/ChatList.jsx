@@ -15,7 +15,8 @@ const ChatList = ({
     },
 
   ],
-  handleDeleteChat, }) => {
+  handleDeleteChat, 
+}) => {
   return (
     <div>
       <Stack width={w} direction={"column"} >
